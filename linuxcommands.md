@@ -47,12 +47,12 @@ To handle Proxies
 
 To copy file/directory from one machine to another machine
 ----------------------------------------------------------
-push to remote machine
+	# push to remote machine
 	sudo scp -r filename user@machine:path
 	sudo scp -r koti/kanna root@finance:myfolder/subfolder
 	sudo scp -r koti/kanna root@finance:/home/folder
 
-pull from remote machine
+	# pull from remote machine
 	sudo scp -r root@finance:/home/folder koti/kanna
 
 To Run Processes in the background
