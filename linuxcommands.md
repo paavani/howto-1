@@ -3,72 +3,72 @@ Frequently used Linux Terminal Commands
 
 To create a directory/folder
 ----------------------------
-mkdir myapps/app/tasks
-suppose if app folder is not exist then it will through error
-If you want to create a parent folder if not available automatically
-mkdir -p myapps/app/tasks
+	mkdir myapps/app/tasks
+	suppose if app folder is not exist then it will through error
+	If you want to create a parent folder if not available automatically
+	mkdir -p myapps/app/tasks
 
 To create a file:
 -----------------
-touch myfile
+	touch myfile
 
 To view a file
 --------------
-cat myfile
+	cat myfile
 
 To remove/delete a file
 ------------------------
-rm filename
-if you want to get a prompt asking you do u want to delete file? y/n:
-rm -i filename
+	rm filename
+	if you want to get a prompt asking you do u want to delete file? y/n:
+	rm -i filename
 
 To remove a direcory
 --------------------
-rm -rf dirname
+	rm -rf dirname
 
 To copy a file
 ---------------
-cp filename
+	cp filename
 
 To rename a file
 -----------------
-mv myoldfile mynewfile
+	mv myoldfile mynewfile
 
 To access remote machine
 ------------------------
-ssh -l user machine
-ssh -l root finance
+	ssh -l user machine
+	ssh -l root finance
 
 To handle Proxies
 -------------------
-export http_proxy=http://192.168.5.100:80
-export https_proxy=https://192.168.5.100:80
-export ftp_proxy=ftp://192.168.5.100:80
+	export http_proxy=http://192.168.5.100:80
+	export https_proxy=https://192.168.5.100:80
+	export ftp_proxy=ftp://192.168.5.100:80
 
 To copy file/directory from one machine to another machine
 ----------------------------------------------------------
 push to remote machine
-sudo scp -r filename user@machine:path
-sudo scp -r koti/kanna root@finance:myfolder/subfolder
-sudo scp -r koti/kanna root@finance:/home/folder
+	sudo scp -r filename user@machine:path
+	sudo scp -r koti/kanna root@finance:myfolder/subfolder
+	sudo scp -r koti/kanna root@finance:/home/folder
 
 pull from remote machine
-sudo scp -r root@finance:/home/folder koti/kanna
+	sudo scp -r root@finance:/home/folder koti/kanna
 
 To Run Processes in the background
 ----------------------------------
-nohup application filename > output.log &
-nohup node server11.js > output.log &
+	nohup application filename > output.log &
+	nohup node server11.js > output.log &
 
 To know list of processes running
 ---------------------------------
-ps -ef
+	ps -ef
 
 To kill the running process
 ---------------------------
-kill processID
-kill 25998
+	kill processID
+	kill 25998
 
 To add a path for node
 ----------------------
-export NODE_PATH="/usr/local/lib/node"
+	export NODE_PATH="/usr/local/lib/node"
