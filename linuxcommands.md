@@ -4,8 +4,8 @@ Frequently used Linux Terminal Commands
 To create a directory/folder
 ----------------------------
 	mkdir myapps/app/tasks
-	suppose if app folder is not exist then it will through error
-	If you want to create a parent folder if not available automatically
+	# suppose if app folder is not exist then it will through error
+	# If you want to create a parent folder if not available automatically
 	mkdir -p myapps/app/tasks
 
 To create a file:
@@ -19,7 +19,7 @@ To view a file
 To remove/delete a file
 ------------------------
 	rm filename
-	if you want to get a prompt asking you do u want to delete file? y/n:
+	# if you want to get a prompt asking you do u want to delete file? y/n:
 	rm -i filename
 
 To remove a direcory
