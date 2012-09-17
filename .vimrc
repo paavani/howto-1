@@ -1,7 +1,8 @@
 syntax on
 
 " ts means tabstop
-set ts=2
+"set ts=2
+:set tabstop=2 softtabstop=2 shiftwidth=2 noexpandtab
 
 " nu means display line numbers
 " to remove line numbers :set nu!
