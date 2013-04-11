@@ -21,9 +21,8 @@ Create .go file and fill this with hello world programe
 -------------------------------
 	vim hello.go
 
-Now give install command 
+Now give install command. It will create bin dir in workspace dir with hello execuatble 
 -------------------------------
-It will create bin dir in workspace dir with hello execuatble 
 	go install
 
 Now execute hello
