@@ -38,6 +38,7 @@ To access remote machine
 ------------------------
 	ssh -l user machine
 	ssh -l root finance
+	ssh user@machine
 
 To handle Proxies
 -------------------
