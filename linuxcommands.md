@@ -72,3 +72,10 @@ To kill the running process
 To add a path for node
 ----------------------
 	export NODE_PATH="/usr/local/lib/node"
+
+Mongodb
+----------------------
+	/etc/init.d/mongodb status
+	/etc/init.d/mongodb start
+	/etc/init.d/mongodb stop
+	/etc/init.d/mongodb restart
