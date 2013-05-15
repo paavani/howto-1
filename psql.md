@@ -1,5 +1,8 @@
-### Frequently used PSQL Commands
+### PSQL Commands
 
+	//Login as user postgres
+	psql -h localhost -U postgres
+	
 	// To (c)onnect to other db
 	mysql: use db_name
 	postgresql: \c db_name
