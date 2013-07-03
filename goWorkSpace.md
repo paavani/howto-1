@@ -55,21 +55,21 @@ Use sudo to edit this file
 	export GOPATH=$HOME/goplay
 	export PATH=$HOME/goplay/bin:$PATH
 
-### Cross Compiling to different platforms and different CPU arcitecture
+# Cross Compiling to different platforms and different CPU arcitecture
 
 1. Install go from source // To cross compile go source code must be available
 2. go get github.com/laher/goxc
 3. goxc -t // creates comiplers for all oses and arch
 
-### Now to build and compile
+## Now to build and compile
 
-# To build to specified arch and os
-$ cd path/to/app/dir
-$ GOARCH=arm GOOS=linux go build helloworld.go
+### To build to specified arch and os
+	$ cd path/to/app/dir
+	$ GOARCH=arm GOOS=linux go build helloworld.go
 
-# To build for all
-$ cd path/to/app/dir
-$ goxc
+### To build for all
+	$ cd path/to/app/dir
+	$ goxc
 
 
 
