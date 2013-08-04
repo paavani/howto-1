@@ -46,6 +46,12 @@ To handle Proxies
 	export https_proxy=https://192.168.5.100:80
 	export ftp_proxy=ftp://192.168.5.100:80
 
+To remove Proxy setting when you have a direct access
+-----------------------------------------------------
+	export http_proxy=
+	export https_proxy=
+	export ftp_proxy=
+
 To copy file/directory from one machine to another machine
 ----------------------------------------------------------
 	# push to remote machine
