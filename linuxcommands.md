@@ -86,3 +86,9 @@ Mongodb
 	/etc/init.d/mongodb start
 	/etc/init.d/mongodb stop
 	/etc/init.d/mongodb restart
+
+Convert as Executable
+---------------------
+	chmod 0777 binaryName
+Then to execute
+	./binaryName
