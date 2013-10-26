@@ -66,6 +66,7 @@ Use sudo to edit this file
 ### To build to specified arch and os
 	$ cd path/to/app/dir
 	$ GOARCH=arm GOOS=linux go build helloworld.go
+	# GOARCH and GOOS are case sensitive if use lower case goarch and goos it will build but it won't work on target machine
 
 ### To build for all
 	$ cd path/to/app/dir
