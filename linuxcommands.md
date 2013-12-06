@@ -92,3 +92,10 @@ Convert as Executable
 	chmod 0777 binaryName
 	./binaryName
 
+Domain Name Mappings in Mac OS
+-------------------------------
+	# To map your IP address to the below hosts
+	# edit
+	sudo vim /etc/hosts
+	# Add below line in this file
+	koteswara.sub.example.com koteswara localhost
