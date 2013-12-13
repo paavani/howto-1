@@ -23,7 +23,7 @@ Usually environmetal variables are used to save configuration details
 	
 	# it will append new path to $PATH.
 	# It is like x = x + y 
-	# PATH = $PATH : newPath
+	# PATH = $PATH + :newPath
 	
 #### If you want to give first priority to your newly added path
 	# Instead of x = x + y it will be x = y + x
