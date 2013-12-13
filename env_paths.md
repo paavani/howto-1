@@ -5,10 +5,10 @@ Usually environmetal variables are used to save configuration details
 	$ env
 	
 #### Create a new environment variable called GOPATH for the directory goplay
-	$ export GOPATH=$Home/goplay # To know what is $HOME, give above "env" command
+	$ export GOPATH=$Home/goplay
 	
 ### PATH
-1. PATH is an env variable. 
+1. PATH is an env variable created by OS unlike the above GOPATH. 
 2. It contains lot of paths for frequently used commands. 
 3. Each path is seperated by colon (:)
 4. In windows, it is seperated by semi-colon (;)
