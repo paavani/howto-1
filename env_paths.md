@@ -8,8 +8,10 @@ Usually environmetal variables are used to save configuration details
 	$ export GOPATH=$Home/goplay # To know what is $HOME, give above "env" command
 	
 ### PATH
-PATH is an env variable. It contains lot of paths for frequently used commands. Each path is seperated by colon (;)  
-In windows, it is seperated by semi-colon (;)
+1. PATH is an env variable. 
+2. It contains lot of paths for frequently used commands. 
+3. Each path is seperated by colon (:)
+4. In windows, it is seperated by semi-colon (;)
 
 #### To Know what PATH contains
 	$ env | grep PATH
@@ -23,19 +25,22 @@ In windows, it is seperated by semi-colon (;)
 	# It is like x = x + y 
 	# PATH = $PATH : newPath
 	
-	# If you want to give first priority to your newly added path
+#### If you want to give first priority to your newly added path
 	# Instead of x = x + y it will be x = y + x
 	
 	$ export PATH=my/new/path:$PATH
 	
-	# some examples of PATH with $HOME.
+#### some examples of PATH with $HOME.
 	
 	$ export PATH=$HOME/my/new/path:$PATH
 	$ export PATH=$PATH:$HOME/my/new/path
 	
-	# To know what is $HOME
+#### To know what is $HOME
 	
 	$ echo $HOME
 	# Alternatively
 	$ env | grep HOME
 	
+#### To save these env variables permanently instead of current session add them to a file
+1. In case of MAC  /etc/bashrc
+2. In case of linux  .bashrc
