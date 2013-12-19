@@ -92,3 +92,24 @@ Convert as Executable
 	chmod 0777 binaryName
 	./binaryName
 
+Domain Name Mappings in Mac OS
+-------------------------------
+	# To map your IP address to the below hosts
+	# edit
+	sudo vim /etc/hosts
+	# Add below line in this file
+	koteswara.sub.example.com koteswara localhost
+
+Creating tar.gz file for deployment
+--------------------------------------
+	tar -czvf myname.tar.gz sourceFolder # Contents of source folder conted as .tar.gz
+	# c for create; z for zip ; v for verbose list files ; f for file
+	# Use http://explainshell.com/ to know the meaning of the command
+	# For golang project sourceFolder contains go binary and static files
+	
+Extracting on Deployment machine
+--------------------------------
+	tar -xzvf myname.tar.gz optionalTargetFolder # if no folder name is specified it will extract to cwd
+	# x for Extract
+
+	
