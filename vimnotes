@@ -1,0 +1,177 @@
+Opening and creating files in vim
+---------------------------------
+vim filename - it opens the given file, or creates if not present
+
+when you open a file in  vim, it opens only copy of that file, changes that you 
+make in file will be in buffer and it will be written only when you explicitly
+specify to write.
+
+:w to write
+:q to quit vim
+
+:wq to write and quit vim
+:q! quit vim by discording changes made to the file
+:e! dicord the changes made to the file without leaving vim
+
+: is called ex command
+:! gives acces to Unix
+:!ls gives list of files
+
+Why do i need access to Unix from vim?
+For instance, when you try to save a file after editing, if the buffer is huge
+and there is no space to save you need to access Unix
+:!df - to know free disk
+:!ls /tmp to see any files to remove
+:!rm wastefile
+
+
+Simple Editing
+---------------
+1. Moving the cursor
+2. Adding and changing text
+3. Deleting, moving, and copying text
+4. More ways to enter insert mode
+
+
+Modes
+--------------
+Comamnd Mode (Default mode)
+Insert Mode (i,a,o,s,S)
+
+i for insert
+a for append
+o for nextline
+
+Esc to move to command mode
+
+r to replace a single character in command mode without leaving command mode
+Single Movements
+----------------------
+
+h--j--k--l
+h for moving left - positing of h is on left hand side in keyboard
+l for moving right - position of l is on right hand side in keyboard
+j is for moving down - highlighted key for blind touching
+k is for moving up - koti :)
+
+Numeric Arguments to multiply movements
+---------------------------------------
+Precede Movement Commands with Numbers
+5h for moving left 4 characters
+3k for moving 3 lines up
+
+Movements within a line
+-----------------------
+0 - Move to the begunning of line
+$ - Move to the end of line
+
+Movements by text blocks
+------------------------
+w - Move the cursor to the beginning of the next word
+W - Move the cursor to the beginning of the next word ignoring special char
+b - Move the cursor the beginiing of the Previous word
+B - same as b ignores special characters
+
+Note you can apply numeric arguments for all movements
+10B - Moves the cursor 10 words back
+
+
+Change Command / Change Text
+----------------------------
+cw - deltes to the end of a word and enters into insert mode
+c2b - deletes Back two words and enters into insert mode
+2cb - same as c2b
+c$ - deltes till the end of line frm cursor and enters into insert mode
+C - same as c$
+c0 - deletes from  begining of line till the cursor and enters insert mode
+cc - deletes entire line and enters into insert moded 
+
+d does same as c but it won't enter into insert mode
+
+(command)(text object)
+(command)(number)(text object)
+(number)(command)(text object)
+
+commands
+--------
+c - for changing
+d - for deleting
+p - for puting
+y - for copying
+
+Substituting text
+-----------------
+s - sustitute command - replaces a single character and enters into insert mode
+8s - replaces 8 characters and enters into insert mode
+S - replaces etire line and enters into insert mode
+r - replaces single character in command mode itself
+R - enteres into overstrike mode i.e replace mode
+~ - changes lower case into uppercase and viceversa without entering into insert mode
+
+x - delete command
+x is same as s but it won't enter into insert mode
+
+u - undo last command
+U - 
+^R - redo
+ 
+
+Moving Text (cut and paste)
+---------------------------
+dd - deltes the current line
+p - paste the deleted content in next line to the cursor
+P - paste the deleted content in previous line to the cursor
+
+xp - to transpose two letters
+J - joins two lines into one
+
+^N - Lists keywords in the file in the insert mode
+
+Searching Text
+--------------
+:set hlsearch - highlights search
+
+/keyword   - highlights all search keywords
+
+n - to navigate to the next highlighted keyword
+N - to navigate to the prevous highlighted keyword
+
+:set nu  - sets line numbers
+
+v - enters into visual mode
+> - indent-in in visual mode
+< - indent-out in visual mode 
+
+Moving Screens
+--------------------
+^f - Move one screen Forward
+^b - Move one screen Backword
+^d - Move half screen down
+^u - Move hasl screen up
+
+My .vimrc file settings
+-----------------------
+syntax on
+" ts means tabstop
+set ts=4
+" nu means display line numbers
+" to remove line numbers :set nu!
+set nu
+" tab navigation like firefox
+" C- Means hold ctrl
+" C-I Means tab and it is only meant for Ctrl key combination
+" S- Means hold shift
+" gt means :tabnext
+" gT means :tabprevious
+" <CR> means carriage return i.e enter key
+map <C-C-I> gt
+map <S-tab> gT
+map <C-t> :tabnew<CR>
+
+444
+You can move text by deleting it and then,
+ You can move text by deleting it and then, 
+You can move text by deleting it and then,
+ J - joins two lines into onJ - joins two lines into on
+eeYou can move text by deleting it and then,
+ You can move text by deleting it and then,
