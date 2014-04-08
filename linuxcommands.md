@@ -112,4 +112,8 @@ Extracting on Deployment machine
 	tar -xzvf myname.tar.gz optionalTargetFolder # if no folder name is specified it will extract to cwd
 	# x for Extract
 
-	
+Excelent Linux Commands Tutorial
+--------------------------------
+Linux Commands In Structured Order with Detailed Reference - See more at: http://linoxide.com/guide/linux-command-shelf.html#sthash.wdcmOdwg.dpuf
+
+
