@@ -48,9 +48,11 @@ Now create a another project Goto your workspace dir
 Note that we have created only src dir in workspace
 bin and pkg directories in workspace are created by go install command
 
-Add these two lines to /etc/bashrc file in mac to add these paths permanently
-In linux .bashrc file
-Use sudo to edit this file
+Add below two lines to add these paths permanently to
+/etc/bashrc file in mac
+.bashrc file in linux
+Or
+.profile file
 ------------------------------------------------
 	export GOPATH=$HOME/goplay
 	export PATH=$HOME/goplay/bin:$PATH
