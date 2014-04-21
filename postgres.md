@@ -1,7 +1,7 @@
-# create a database in postgresql
+### Create a database in postgresql
 
 	$ createdb mydb
 
-# delete a database in postgresql
+### Delete a database in postgresql
 
 	$ dropdb mydb
