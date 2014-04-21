@@ -39,4 +39,15 @@
 
 	=# DROP TABLE tablename
 
+### Execute commands from a sql file from inside psql prompt
+
+	=# \i ./myfile.sql
+
+where i stands for input file
+
+### Execute commands from a sql file from outside psql prompt
+
+	$ psql -U dbusername -d dbname -f filename
+	$ psql -U postgres -d postgres -f ./myfile.sql
+
 
