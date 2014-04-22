@@ -1,0 +1,91 @@
+Goal of normalization is to eliminate redundency								
+								
+Three forms of nomalization as stated by inventor of relational databases, E.F. Codd's								
+								
+1NF	No Repeating columns and every row is unique							
+2NF	All attributes should depend on full primary key							
+3NF	All attributes should directly(nontransitively) depend on primarykey.							
+								
+								
+1NF								
+								
+Person								
+ID	Name	Email	Phone	Child1	Child2	Child3		
+1	koti	k@i.com	988	a	b	c		--> No space for 4th child if any
+2	kanna	j@p.com	438	k	p			-->waste of space as he has only 2 children
+3	chinna	i@n.com	7966					--> waste of space as he doesn't have any children
+								
+Person								
+ID	Name	Email	Phone		ID is primary key			
+1	koti	k@i.com	988					
+2	kanna	j@p.com	438					
+3	chinna	i@n.com	7966					
+								
+								
+PersonChild								
+ID	Seq	Child			ID & Seq is composite primary key			
+1	1	a						
+1	2	b						
+1	3	c						
+2	1	k						
+2	2	p						
+
+
+2NF	All attributes depend on full primary key			
+				
+				
+PersonProject				
+PersonID	ProjectID	PersonName	ProjectCode	ProjectName
+1	1	anil	Proj1	
+2	1	sunil	Proj1	
+3	1	binil	Proj1	
+4	1	livil	Proj1	
+1	2	anil	Proj2	
+2	2	sunil	Proj2	
+3	2	binil	Proj2	
+4	2	livil	Proj2	
+				
+				
+				
+Person				
+PersonID	PersonName			
+1				
+2				
+3				
+4				
+				
+Project				
+ProjectID	ProjectCode	ProjectName		
+1	Proj1			
+2	Proj2			
+				
+PersonProject			PersonProject - Relation	
+ProjectID	PersonID			
+1	1			
+1	2			
+1	3			
+1	4			
+2	1			
+2	2			
+2	3			
+2	4			
+
+
+3NF	All attributes should directly(nontransitively) depend on primarykey. In otherwords, it should not contain derivable data.			
+				
+EmpName	City	County		
+Anil	chennai	India		Based on city we can derive country
+Sunil	chennai	India		So city is directly dependent on PK. Where as country is indirectly depend on primary key
+Ginil	chennai	India		
+Minil	banglore	India						
+				
+EmpName	City			
+Anil	chennai			
+Sunil	chennai			
+Ginil	chennai			
+Minil	banglore			
+				
+City	Country			
+chennai	India			
+banglore	India			
+
