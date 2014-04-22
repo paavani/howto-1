@@ -58,3 +58,10 @@ set pastetoggle=<F2>
 
 " md is for markdown
 au BufRead,BufNewFile *.md set filetype=markdown
+
+" golang specific
+filetype off
+filetype plugin indent off
+set runtimepath+=$GOROOT/misc/vim
+filetype plugin indent on
+syntax on
