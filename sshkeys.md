@@ -41,3 +41,9 @@ Now you are ready to add your SSH key to DigitalOcean. Simply click Add SSH Key 
 Now you are ready to create a droplet with your SSH key available during the creation process. When you create the new droplet simply select the key and it will be automatically added to the root user of your droplet. Then you can SSH directly to the server as normal:
 
 	$ ssh root@xx.xx.xx.xx
+
+To Remove Entries from known hosts
+----------------------------------
+	ssh-keygen -R hostname
+
+If Step 4 fails, use the above command. It is possible DO assigened same ip which you have used for your old server.
