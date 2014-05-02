@@ -116,4 +116,11 @@ Excelent Linux Commands Tutorial
 --------------------------------
 Linux Commands In Structured Order with Detailed Reference - See more at: http://linoxide.com/guide/linux-command-shelf.html#sthash.wdcmOdwg.dpuf
 
+To Remove Entries from known hosts
+----------------------------------
+	ssh-keygen -R hostname
 
+	Once i created a digitalOcean server, it has provided an ip. 
+	I used ssh to access this machine. At that time this ip got added to known_hosts of .ssh folder
+	Later i deleted this server and again created a new server but digitalOcean assigned same ip for the new server.
+	When i tried to access this machine via ssh, it throwed an err as finger print doesn't match. Used the above command to solve this problem.
