@@ -71,6 +71,10 @@ To know list of processes running
 ---------------------------------
 	ps -ef
 
+To filter the required processes
+---------------------------------
+	ps -ef | grep searchString
+
 To kill the running process
 ---------------------------
 	kill processID
