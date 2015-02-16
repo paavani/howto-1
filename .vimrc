@@ -65,3 +65,6 @@ filetype plugin indent off
 set runtimepath+=$GOROOT/misc/vim
 filetype plugin indent on
 syntax on
+
+" .tag file syntax highlighiting as of html
+au BufRead,BufNewFile *.tag :set filetype=html
