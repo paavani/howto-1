@@ -10,4 +10,25 @@
 
 		npm install bower -g
 
+3. Install ember cli
+
+		npm install -g ember-cli
+
+
 ### Getting Started
+
+1. Create new app
+
+		ember new myapp
+		cd myapp
+		bower install
+		ember server
+
+2. Create a resource
+
+		ember generate resource faq --pod
+
+3. Load other static assets via Brocfile.js
+
+		app.import('./bower_components/bootstrap/dist/css/bootstrap.min.css');
+
