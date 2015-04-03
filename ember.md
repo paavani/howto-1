@@ -34,6 +34,10 @@
 
 		ember generate resource faq
 
-3. Load other static assets via Brocfile.js
+3. Install other static assets 
+
+		bower install bootstrap --save  // it will save a reference in bower.json file
+
+4. Load other static assets via Brocfile.js
 
 		app.import('./bower_components/bootstrap/dist/css/bootstrap.min.css');
