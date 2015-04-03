@@ -21,14 +21,19 @@
 
 		ember new myapp
 		cd myapp
-		bower install
 		ember server
+
+2. Set usepods to true in .ember-cli to use pod style structure
+
+		{
+  			"usePods": true,
+  			"disableAnalytics": true
+		}
 
 2. Create a resource
 
-		ember generate resource faq --pod
+		ember generate resource faq
 
 3. Load other static assets via Brocfile.js
 
 		app.import('./bower_components/bootstrap/dist/css/bootstrap.min.css');
-
