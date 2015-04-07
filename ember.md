@@ -79,3 +79,9 @@
 9. Create a resource
 
 		ember generate resource faq
+
+10. Id gotchas
+
+		You should not use Id attr in ember model, otherwise it will throw an error
+		While making HTTP PUT request ember won't send Id, you need to take it from URL in serverside
+		Ember expects modified record along with Id, from server respone after you make a PUT request
