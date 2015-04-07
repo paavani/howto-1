@@ -54,11 +54,14 @@
 
 7. Edit config/environment.js to allow cross orign requests
 
-		Add to ENV object below two propertis
-			contenetSecurityPolicyHeader: 'Content-Security-Policy',
-			contentSecurityPolicy: {
-				'connect-src': "'self ws://localhost:35729 http://127.0.0.1:6789"
-		},
+		// Add to ENV object below two propertis
+		contenetSecurityPolicyHeader: 'Content-Security-Policy',
+		contentSecurityPolicy: {
+			'connect-src': "'self ws://localhost:35729 http://127.0.0.1:6789"
+		}
+
+		// In Golang server
+		w.Header().Set("Access-Control-Allow-Origin", "*")
 
 8. Edit config/environment.js to change url patteren
 
