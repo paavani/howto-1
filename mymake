@@ -1,12 +1,7 @@
-#!bin/bash
+#Generate BuildSHA using GIT_SHA
 SHELL := /bin/bash
 GIT_SHA := $(shell git rev-parse --short HEAD)
 
-#generate go file
-kanna:
-   @echo package main > gitsha.go
-   @echo const BuildSHA = \"$(GIT_SHA)\" >> gitsha.go
-
-#go build with gitSha
+#go build
 build:
    go build -ldflags "-X main.BuildSHA ${GIT_SHA}"
