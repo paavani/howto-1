@@ -1,0 +1,25 @@
+#!bin/bash
+
+#Generate BuildSHA using GIT_SHA
+
+SHELL := /bin/bash
+GIT_SHA := $(shell git rev-parse --short HEAD)
+
+all: kanna chinna love
+
+#make
+.PHONY: all
+
+#make kanna
+kanna:
+   @echo GIT_SHA=${GIT_SHA}"
+
+#make chinna
+chinna:
+   @echo Hi Dear
+   @echo How Are You?
+
+#make love - wrties to the file how.txt
+love:
+    @echo How are you? > how.txt
+    @echo Pyaar dil khushee. >> how.txt
