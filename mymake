@@ -1,4 +1,7 @@
+#!bin/bash
+
 #Generate BuildSHA using GIT_SHA
+
 SHELL := /bin/bash
 GIT_SHA := $(shell git rev-parse --short HEAD)
 
