@@ -34,6 +34,14 @@ To rename a file
 -----------------
 	mv myoldfile mynewfile
 
+To List files in tree structure
+--------------------------------
+	# In Linux
+	tree
+	
+	#In Mac
+	find .
+
 To access remote machine
 ------------------------
 	ssh -l user machine
