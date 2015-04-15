@@ -50,4 +50,6 @@ where i stands for input file
 	$ psql -U dbusername -d dbname -f filename
 	$ psql -U postgres -d postgres -f ./myfile.sql
 
+### Replace new line charcter
+	Update tablename set fieldname=regexp_replace(fieldname, E'[\\n\\r]+', '', 'g');
 
