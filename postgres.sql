@@ -11,7 +11,8 @@ $$
    order by 1,2 
 $$,
 $$
-   Values ('2015-01-01'::date),('2015-02-01'),('2015-06-01') --important 
+   Values ('2015-01-01'::date),('2015-02-01'),('2015-03-01') --important 
 $$
 )
-AS ct(mgroup text, "2005-01-01" numeric, "2015-02-01" numeric, "2015-06-01" numeric);
+
+AS ct(mgroup text, "2005-01-01" numeric, "2015-02-01" numeric, "2015-03-01" numeric);
