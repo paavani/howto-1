@@ -53,3 +53,5 @@ where i stands for input file
 ### Replace new line charcter
 	Update tablename set fieldname=regexp_replace(fieldname, E'[\\n\\r]+', '', 'g');
 
+### Import file
+	\copy zmis.tb from '/Users/koteswara-0347/Downloads/Final_TB_IC.csv' with delimiter ',' CSV HEADER encoding 'windows-1252';
