@@ -59,5 +59,8 @@ where i stands for input file
 ### Import file by specifying column names
 	\copy zmis.tb(field1, field2, ...) from '/Users/koteswara-0347/Downloads/Final_TB_IC.csv' with delimiter ',' CSV HEADER encoding 'windows-1252';
 
+### Export from database
+	\copy (select * from hr.psp) TO './psp.csv' WITH CSV HEADER
+
 #### Rename a Column
 	ALTER TABLE hr.employee RENAME COLUMN pspf TO pspamt;
