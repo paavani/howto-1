@@ -19,17 +19,35 @@
 
 	defaultdb=# \l
 
+### List of schema names
+
+	defaultdb=# \dn
+
+### To write sql in vim editor instead of command line
+
+	defaultdb=# \e
+
 ### Create a Table
+```sql
+CREATE TABLE weather (
+	city varchar(80), -- this is comment
+	temp_lo int, -- low temprature
+	temp_hi int -- high temprature
+);
+```
 
-	=# CREATE TABLE weather (
-	=# city varchar(80), -- this is comment
-	=# temp_lo int, -- low temprature
-	=# temp_hi int -- high temprature
-	=# );
-
-### Display tables
+### Display tables of public schema along with column names
 
 	=# \d
+
+### Display tables of specified schema along with column names
+
+	=# \d schema.*
+
+### Display tables of specified schema
+
+	=# \dt schema.*
+
 
 ### Display table columns
 
