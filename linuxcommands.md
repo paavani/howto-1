@@ -16,6 +16,14 @@ To view a file
 --------------
 	cat myfile
 
+To view last few lines of file
+------------------------------
+	tail myfile
+
+To view last few lines of file with live update e.g. watching log files in terminal
+------------------------------
+	tail -f myfile  # f stands for follow
+
 To remove/delete a file
 ------------------------
 	rm filename
