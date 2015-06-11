@@ -88,6 +88,9 @@ where i stands for input file
 -- It accepts upper case alphabets and numers only e.g 'K1234J'
 CREATE DOMAIN alnum AS text CHECK( value ~ '^[A-Z0-9]+$');
 
+-- It accepts one special character '-' along wiht upper case alpha and numeric
+CREATE DOMAIN alnumh AS text CHECK( value ~ '^[A-Z0-9\-]+$');
+
 CREATE TABLE Employee (
 	Id alnum not null,
 	Name text
