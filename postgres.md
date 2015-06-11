@@ -82,3 +82,9 @@ where i stands for input file
 
 #### Rename a Column
 	ALTER TABLE hr.employee RENAME COLUMN pspf TO pspamt;
+
+#### Creating new data type
+```sql 
+-- It accepts upper case alphabets and numers only e.g 'K1234J'
+CREATE DOMAIN rd.alnum AS text CHECK( value ~ '^[A-Z0-9]+$');
+```
