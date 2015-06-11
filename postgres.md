@@ -86,5 +86,10 @@ where i stands for input file
 #### Creating new data type
 ```sql 
 -- It accepts upper case alphabets and numers only e.g 'K1234J'
-CREATE DOMAIN rd.alnum AS text CHECK( value ~ '^[A-Z0-9]+$');
+CREATE DOMAIN alnum AS text CHECK( value ~ '^[A-Z0-9]+$');
+
+CREATE TABLE Employee (
+	Id alnum not null,
+	Name text
+);
 ```
